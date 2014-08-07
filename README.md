@@ -6,8 +6,14 @@ The algorithm works by finding the largest partition and then successively using
 
 For Example, given this list of partitions : "b/acde", "ba/cde", "bace/d", "bacd/e"
 
-The algorithm starts with the initial partition : [ba]-[cde]    
-Then using the partition b/acde we can further partition [ba] to [b]-[a].  
+The algorithm starts with the initial partition:
+```
+[ba]-[cde]    
+```
+Then using the partition b/acde we can further partition [ba] to:
+```
+[b]-[a]
+```
 Similarly, we can apply the other two partitions to the subset [cde] to get:
 ```
 [c]-[e].     
