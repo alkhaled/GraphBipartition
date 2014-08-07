@@ -45,8 +45,7 @@ namespace TreeBipartition
 			private void RemoveFromLocalMembers(Set goingToChild)
 			{
 				// Assuming linq is optimized so this is not an O(n^2) op.
-				var filtered = localMembers
-									 .Where(x => !goingToChild.localMembers.Any(y => y == x));
+				var filtered = localMembers.Where(x => !goingToChild.localMembers.Any(y => y == x));
 				localMembers = filtered.ToList();
 			}
 
